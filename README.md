@@ -1,6 +1,6 @@
 # Photo Organizer
 
-Photo Organizer for Mac是一个 Bash 脚本，也同样支持Linux发行版本，旨在帮助用户整理照片文件夹中的照片。它提供了两种整理方式：
+Photo Organizer for Mac是一个 Bash 脚本，也同样支持Linux发行版本，旨在帮助作者自己整理照片文件夹中的照片。它提供了两种整理方式：
 
 1. **按拍摄日期整理：**根据拍摄日期创建文件夹，并将照片移动到相应的日期文件夹中。
 2. **按文件格式整理：**根据文件格式（JPG、ARW 等）将照片移动到不同的文件夹中。
@@ -8,32 +8,32 @@ Photo Organizer for Mac是一个 Bash 脚本，也同样支持Linux发行版本�
 ## 如何使用
 
 1. 将 `photo_organizer.sh` 文件复制到包含您照片的文件夹中。
-2. 在终端中导航到该文件夹。
+2. 在终端中导航到该文件夹（cd 路径）。
 3. 运行以下命令：
 
 ```
 ./photo_organizer.sh
 ```
 
-4. 根据提示选择整理方式，并按照指示操作即可。
+4. 根据提示选择整理方式（输入1或2），并按照指示操作即可。
 
 ## 注意事项
 
-- 确保照片文件夹中包含您要整理的照片。
+- 确保放置该脚本的文件夹中包含要整理的照片。
 - 脚本支持处理以下常见的照片格式：JPG、ARW、NEF、ORF、RW2、RAF 和 DNG。
 - 在移动文件时，脚本会进行错误处理，并在发生错误时显示相应的错误消息。
 - 如果需要处理其他格式的文件或指定不同的目录，请参考脚本中的参数化部分，并相应修改。
-- 请注意，您可能需要给予执行权限 (chmod +x photo_organizer.sh)
+- 请注意，可能需要给予执行权限 (chmod +x photo_organizer.sh)
 
 ## 系统要求
 
-这个脚本是一个 Bash 脚本，在任何支持 Bash 的操作系统上都可以运行，包括：
+这个脚本是一个 Bash 脚本，在任何支持 Bash 的操作系统上都可以运行，比如说......
 
-- Linux 发行版（如 Ubuntu、Fedora、Debian 等）
+- Linux 发行版（如 Ubuntu、Fedora、Debian 等 P.S. Ubuntu永远的神 ——作者）
 - macOS
 - Windows 上的 Windows Subsystem for Linux (WSL)
 
-请确保您的操作系统支持 Bash 和相关的 Unix 工具，因为脚本依赖于它们进行执行。
+请确保您的操作系统支持 Bash 和相关的 Unix 工具，因为脚本依赖于它们进行执行。像是用Windows的孩子们就别瞎忙活了，搞WSL比你手动复制还要麻烦
 
 ## 常见故障排除
 

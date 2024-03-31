@@ -23,7 +23,7 @@ Photo Organizer for Mac是一个 Bash 脚本，也同样支持Linux发行版本�
 - 脚本支持处理以下常见的照片格式：JPG、ARW、NEF、ORF、RW2、RAF 和 DNG。
 - 在移动文件时，脚本会进行错误处理，并在发生错误时显示相应的错误消息。
 - 如果需要处理其他格式的文件或指定不同的目录，请参考脚本中的参数化部分，并相应修改。
-- 请注意，您可能需要给予执行权限 (chmod +x script.sh)
+- 请注意，您可能需要给予执行权限 (chmod +x photo_organizer.sh)
 
 ## 系统要求
 

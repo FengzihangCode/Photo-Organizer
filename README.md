@@ -61,3 +61,4 @@ chmod +x photo_organizer.sh
 优化“撤销上一次操作”
 ### PO Desktop
 UI重构
+支持照片预览、查看元数据、对比

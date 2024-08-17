@@ -11,7 +11,8 @@ import SwiftUI
 struct Photo_OrganizerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView() // 这里引用你定义的 ContentView
         }
     }
 }
+

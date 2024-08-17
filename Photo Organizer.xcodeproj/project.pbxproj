@@ -14,6 +14,7 @@
 		B2EFFEC62C707A0800D1F3C2 /* Photo_OrganizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EFFEC52C707A0800D1F3C2 /* Photo_OrganizerTests.swift */; };
 		B2EFFED02C707A0800D1F3C2 /* Photo_OrganizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EFFECF2C707A0800D1F3C2 /* Photo_OrganizerUITests.swift */; };
 		B2EFFED22C707A0800D1F3C2 /* Photo_OrganizerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EFFED12C707A0800D1F3C2 /* Photo_OrganizerUITestsLaunchTests.swift */; };
+		B2EFFEDF2C7089D600D1F3C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EFFEDE2C7089D600D1F3C2 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		B2EFFECB2C707A0800D1F3C2 /* Photo OrganizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Photo OrganizerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2EFFECF2C707A0800D1F3C2 /* Photo_OrganizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo_OrganizerUITests.swift; sourceTree = "<group>"; };
 		B2EFFED12C707A0800D1F3C2 /* Photo_OrganizerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo_OrganizerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B2EFFEDE2C7089D600D1F3C2 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				B2EFFEB32C707A0400D1F3C2 /* Photo_OrganizerApp.swift */,
 				B2EFFEB52C707A0400D1F3C2 /* ContentView.swift */,
+				B2EFFEDE2C7089D600D1F3C2 /* ContentView.swift */,
 				B2EFFEB72C707A0800D1F3C2 /* Assets.xcassets */,
 				B2EFFEBC2C707A0800D1F3C2 /* Photo_Organizer.entitlements */,
 				B2EFFEB92C707A0800D1F3C2 /* Preview Content */,
@@ -261,6 +264,7 @@
 			files = (
 				B2EFFEB62C707A0400D1F3C2 /* ContentView.swift in Sources */,
 				B2EFFEB42C707A0400D1F3C2 /* Photo_OrganizerApp.swift in Sources */,
+				B2EFFEDF2C7089D600D1F3C2 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -55,4 +55,4 @@ chmod +x photo_organizer.sh
 我们发现撤回操作可能无法完全执行
 ## 正在开发的内容
 我们正在开发适用于macOS的Photo Organizer桌面应用程序，以支持在macOS中以图形化的方式高效整理照片
-<img width="189" alt="截屏2024-08-17 下午2 20 00" src="https://github.com/user-attachments/assets/aae0dc96-b474-42f6-8ee6-71901fdaf335">
+<img width="1012" alt="Photo Organizer Preview" src="https://github.com/user-attachments/assets/fa723772-cf85-419f-b34e-374a6d1471c6">

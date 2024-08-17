@@ -53,3 +53,5 @@ chmod +x photo_organizer.sh
 作者使用了PowerShell脚本（*.ps1）来实现Windows的功能，已经在1.1.0中发布
 ## 已知问题
 我们发现撤回操作可能无法完全执行
+## 正在开发的内容
+我们正在开发适用于macOS的Photo Organizer桌面应用程序，以支持在macOS中以图形化的方式高效整理照片

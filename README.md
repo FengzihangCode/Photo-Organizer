@@ -61,15 +61,14 @@ chmod +x photo_organizer.sh
 <img width="1012" alt="Photo Organizer Preview" src="https://github.com/user-attachments/assets/fa723772-cf85-419f-b34e-374a6d1471c6">
 ## 以后的开发计划
 ### PO PowerShell与PO Bash
+#### 代码优化
 优化“撤销上一次操作”
 ### PO Desktop
 我们会在接下来的版本中逐渐完成以下内容：
-#### 构建UI
-支持深色模式
-#### 预览
-支持照片预览、查看元数据、对比
+#### 用户界面
+构建一个成熟且易于操作的UI，使程序支持深色模式，尽快翻译到English与Français
+#### 操作
+支持照片预览、查看元数据、对比，勾选特定的照片以进行手动筛选；允许设置默认目录
 #### 功能
-支持设置默认目录
-帮助文档
-关于页面
+添加帮助文档、关于、设置
 #### 支持Windows操作系统

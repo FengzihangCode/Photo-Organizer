@@ -63,10 +63,13 @@ chmod +x photo_organizer.sh
 ### PO PowerShell与PO Bash
 优化“撤销上一次操作”
 ### PO Desktop
-UI重构
-支持照片预览、查看元数据、对比
+我们会在接下来的版本中逐渐完成以下内容：
+#### 构建UI
 支持深色模式
+#### 预览
+支持照片预览、查看元数据、对比
+#### 功能
 支持设置默认目录
 帮助文档
 关于页面
-支持Windows操作系统
+#### 支持Windows操作系统

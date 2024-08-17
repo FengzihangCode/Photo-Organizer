@@ -3,8 +3,7 @@ Photo Organizer是一个适用于Windows/macOS/Linux的脚本，旨在帮助分�
 1. **按拍摄日期整理：**根据拍摄日期创建文件夹，并将照片移动到相应的日期文件夹中。
 2. **按文件格式整理：**根据文件格式（JPG、ARW 等）将照片移动到不同的文件夹中。
 ## 选择哪一个版本
-如果使用的是Windows操作系统，请使用PO Powershell
-反之，则使用PO Bash
+如果使用的是Windows操作系统，请使用PO Powershell，反之，则使用PO Bash
 ## 如何使用（针对PO Bash）
 1. 将 `photo_organizer.sh` 文件复制到包含您照片的文件夹中。
 2. 在终端中导航到该文件夹。

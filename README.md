@@ -56,3 +56,8 @@ chmod +x photo_organizer.sh
 ## 正在开发的内容
 我们正在开发适用于macOS的Photo Organizer桌面应用程序，以支持在macOS中以图形化的方式高效整理照片
 <img width="1012" alt="Photo Organizer Preview" src="https://github.com/user-attachments/assets/fa723772-cf85-419f-b34e-374a6d1471c6">
+## 以后的开发计划
+### PO PowerShell与PO Bash
+优化“撤销上一次操作”
+### PO Desktop
+UI重构

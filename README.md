@@ -72,3 +72,8 @@ chmod +x photo_organizer.sh
 #### 功能
 添加帮助文档、关于（在V1.3.0 Desktop中完成按钮）、设置（在V1.3.0 Desktop中完成按钮）
 #### 支持Windows操作系统（计划在V2.0.0发布时上线）
+## 联系作者
+### Email
+FengzihangCode@outlook.com
+### QQ
+3412097978

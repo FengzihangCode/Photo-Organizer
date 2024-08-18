@@ -7,7 +7,7 @@ Photo Organizer包含适用于Windows/macOS/Linux的脚本与针对macOS的桌�
 ### 按元数据整理（开发中）
 根据照片元数据中的相机、镜头或位置信息将照片移动到不同的文件夹中。
 ## 选择哪一个版本
-如果使用的是Windows操作系统，请使用PO Powershell，反之，则使用PO Bash。我们推荐macOS用户使用PO Desktop以获得最佳体验与持续更新
+如果使用的是Windows操作系统，请使用PO Powershell，反之，则使用PO Bash。我们推荐macOS 13.5以上用户使用PO Desktop以获得最佳体验与持续更新
 ## 如何使用（针对PO Bash）
 1. 将 `photo_organizer.sh` 文件复制到包含您照片的文件夹中。
 2. 在终端中导航到该文件夹。

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B21E4D212C74BE6E003EAB52 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21E4D202C74BE6E003EAB52 /* WelcomeView.swift */; };
+		B23688DB2C76174B004C211A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23688DA2C76174B004C211A /* ContentView.swift */; };
 		B25C10712C70C2EC0034EE55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25C10702C70C2EC0034EE55 /* ContentView.swift */; };
 		B2EFFEB42C707A0400D1F3C2 /* Photo_OrganizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EFFEB32C707A0400D1F3C2 /* Photo_OrganizerApp.swift */; };
 		B2EFFEB82C707A0800D1F3C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2EFFEB72C707A0800D1F3C2 /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B21E4D202C74BE6E003EAB52 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		B23688DA2C76174B004C211A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B25C10702C70C2EC0034EE55 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B2EFFEB02C707A0400D1F3C2 /* Photo Organizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photo Organizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2EFFEB32C707A0400D1F3C2 /* Photo_OrganizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo_OrganizerApp.swift; sourceTree = "<group>"; };
@@ -97,8 +101,10 @@
 			children = (
 				B2EFFEB32C707A0400D1F3C2 /* Photo_OrganizerApp.swift */,
 				B25C10702C70C2EC0034EE55 /* ContentView.swift */,
+				B23688DA2C76174B004C211A /* ContentView.swift */,
 				B2EFFEB72C707A0800D1F3C2 /* Assets.xcassets */,
 				B2EFFEBC2C707A0800D1F3C2 /* Photo_Organizer.entitlements */,
+				B21E4D202C74BE6E003EAB52 /* WelcomeView.swift */,
 				B2EFFEB92C707A0800D1F3C2 /* Preview Content */,
 			);
 			path = "Photo Organizer";
@@ -213,8 +219,6 @@
 			developmentRegion = "zh-Hans";
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
-				Base,
 				"zh-Hans",
 			);
 			mainGroup = B2EFFEA72C707A0400D1F3C2;
@@ -261,6 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2EFFEB42C707A0400D1F3C2 /* Photo_OrganizerApp.swift in Sources */,
+				B21E4D212C74BE6E003EAB52 /* WelcomeView.swift in Sources */,
+				B23688DB2C76174B004C211A /* ContentView.swift in Sources */,
 				B25C10712C70C2EC0034EE55 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,7 +357,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -408,7 +414,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -426,12 +432,13 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Photo Organizer/Preview Content\"";
 				DEVELOPMENT_TEAM = UGT9K2LTQ3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Photo Organizer";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -439,7 +446,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.5;
-				MARKETING_VERSION = 1.4.0;
+				MARKETING_VERSION = 1.6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "DannyFeng.Photo-Organizer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -454,15 +461,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "Photo Organizer/Photo_Organizer.entitlements";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Photo Organizer/Preview Content\"";
 				DEVELOPMENT_TEAM = UGT9K2LTQ3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Photo Organizer";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +478,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.5;
-				MARKETING_VERSION = 1.4.0;
+				MARKETING_VERSION = 1.6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "DannyFeng.Photo-Organizer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

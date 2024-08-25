@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2152E4A2C7ACF48007A28B1 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B2152E492C7ACF48007A28B1 /* Localizable.xcstrings */; };
 		B25C10712C70C2EC0034EE55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25C10702C70C2EC0034EE55 /* ContentView.swift */; };
 		B2EFFEB42C707A0400D1F3C2 /* Photo_OrganizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EFFEB32C707A0400D1F3C2 /* Photo_OrganizerApp.swift */; };
 		B2EFFEB82C707A0800D1F3C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2EFFEB72C707A0800D1F3C2 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B2152E492C7ACF48007A28B1 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		B25C10702C70C2EC0034EE55 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B2C574032C79915300A3CD48 /* Photo OrganizerRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Photo OrganizerRelease.entitlements"; sourceTree = "<group>"; };
 		B2EFFEB02C707A0400D1F3C2 /* Photo Organizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photo Organizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,10 +75,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B2152E482C7ACEDD007A28B1 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				B2152E492C7ACF48007A28B1 /* Localizable.xcstrings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		B2EFFEA72C707A0400D1F3C2 = {
 			isa = PBXGroup;
 			children = (
 				B2EFFEB22C707A0400D1F3C2 /* Photo Organizer */,
+				B2152E482C7ACEDD007A28B1 /* Localization */,
 				B2EFFEC42C707A0800D1F3C2 /* Photo OrganizerTests */,
 				B2EFFECE2C707A0800D1F3C2 /* Photo OrganizerUITests */,
 				B2EFFEB12C707A0400D1F3C2 /* Products */,
@@ -216,6 +227,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				"zh-Hans",
+				en,
 			);
 			mainGroup = B2EFFEA72C707A0400D1F3C2;
 			productRefGroup = B2EFFEB12C707A0400D1F3C2 /* Products */;
@@ -236,6 +248,7 @@
 			files = (
 				B2EFFEBB2C707A0800D1F3C2 /* Preview Assets.xcassets in Resources */,
 				B2EFFEB82C707A0800D1F3C2 /* Assets.xcassets in Resources */,
+				B2152E4A2C7ACF48007A28B1 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +453,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.5;
-				MARKETING_VERSION = 1.7.0;
+				MARKETING_VERSION = 1.8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "DannyFeng.Photo-Organizer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -472,7 +485,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.5;
-				MARKETING_VERSION = 1.7.0;
+				MARKETING_VERSION = 1.8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "DannyFeng.Photo-Organizer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

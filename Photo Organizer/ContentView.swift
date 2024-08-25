@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-import CloudKit //iCloud
+import AppKit
+import Foundation
 
 struct ContentView: View {
     @State private var sourceFolderURL: URL?
@@ -28,8 +29,12 @@ struct ContentView: View {
     @State private var photoPreviews: [NSImage] = []
     @State private var previewMessage: String = "未选定源文件夹"
     
+    @AppStorage("selectedLanguage") var selectedLanguage: String = Locale.current.language.languageCode?.identifier ?? "zh-Hans"
+    
     let supportedFormats: [String] = ["jpg", "jpeg", "png", "heic", "bmp", "tiff"] // 可预览的格式
     let rawFormats: [String] = ["arw", "dng", "cr2", "nef"] // RAW格式应当是无法被直接预览的，因而此列表为不可预览的格式
+    let languages = ["en": "English", "zh-Hans": "中文"]
+    //let languages = ["zh-Hans": "中文", "en": "English"]
     
     var body: some View {
         HStack(spacing: 0) {
@@ -38,16 +43,16 @@ struct ContentView: View {
                 VStack {
                     Spacer()
                     
-                    SidebarButton(label: "主页", systemImage: "house", isSelected: currentPage == "主页", themeColor: selectedThemeColor) {
+                    SidebarButton(label: NSLocalizedString("主页", comment: "主页按钮"), systemImage: "house", isSelected: currentPage == "主页", themeColor: selectedThemeColor) {
                         currentPage = "主页"
                     }
-                    SidebarButton(label: "接力", systemImage: "ipad.and.iphone", isSelected: currentPage == "接力", themeColor: selectedThemeColor) {
+                    SidebarButton(label: NSLocalizedString("接力", comment: "接力按钮"), systemImage: "ipad.and.iphone", isSelected: currentPage == "接力", themeColor: selectedThemeColor) {
                         currentPage = "接力"
                     }
-                    SidebarButton(label: "帮助", systemImage: "questionmark.circle", isSelected: currentPage == "帮助", themeColor: selectedThemeColor) {
+                    SidebarButton(label: NSLocalizedString("帮助", comment: "帮助按钮"), systemImage: "questionmark.circle", isSelected: currentPage == "帮助", themeColor: selectedThemeColor) {
                         currentPage = "帮助"
                     }
-                    SidebarButton(label: "设置", systemImage: "gear", isSelected: currentPage == "设置", themeColor: selectedThemeColor) {
+                    SidebarButton(label: NSLocalizedString("设置", comment: "设置按钮"), systemImage: "gear", isSelected: currentPage == "设置", themeColor: selectedThemeColor) {
                         currentPage = "设置"
                     }
                     
@@ -73,9 +78,9 @@ struct ContentView: View {
                     
                     // Change title based on the selected page
                     Text(currentPage == "主页" ? "Photo Organizer Desktop" :
-                         currentPage == "设置" ? "设置" :
-                         currentPage == "接力" ? "接力" :
-                         currentPage == "帮助" ? "帮助" :
+                         currentPage == "设置" ? NSLocalizedString("设置", comment: "设置标题") :
+                         currentPage == "接力" ? NSLocalizedString("接力", comment: "接力标题") :
+                         currentPage == "帮助" ? NSLocalizedString("帮助", comment: "帮助标题") :
                          "unknown")
 
                         .font(.largeTitle)
@@ -90,9 +95,9 @@ struct ContentView: View {
                     VStack(alignment: .leading, spacing: 20) {
                         // Source Folder Selection
                         HStack {
-                            Text("源文件夹")
+                            Text(NSLocalizedString("源文件夹", comment: "源文件夹选择框左侧的提示"))
                                 .frame(width: 67, alignment: .leading)
-                            TextField("输入或选择路径", text: $sourceFolderPath, onCommit: {
+                            TextField(NSLocalizedString("输入或选择路径", comment: "提示用户输入或选择路径"), text: $sourceFolderPath, onCommit: {
                                 sourceFolder = URL(fileURLWithPath: sourceFolderPath)
                                 loadPhotos(from: sourceFolder!)
                             })
@@ -105,20 +110,20 @@ struct ContentView: View {
                         
                         // Destination Folder Selection
                         HStack {
-                            Text("目标文件夹")
+                            Text(NSLocalizedString("目标文件夹", comment: "目标文件夹选择框左侧的提示"))
                                 .frame(width: 67, alignment: .leading)
-                            TextField("输入或选择路径", text: $destinationFolderPath)
+                            TextField(NSLocalizedString("输入或选择路径", comment: "提示用户输入或选择路径"), text: $destinationFolderPath)
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
                                 .padding(.trailing, 1)
                             Button(action: selectDestinationFolder) {
-                                Text("浏览")
+                                Text(NSLocalizedString("浏览", comment: "浏览按键"))
                             }
                         }
                         
                         // Category Selection
-                        Picker("选择分类方式", selection: $selectedCategory) {
-                            Text("日期").tag("日期")
-                            Text("文件格式").tag("文件格式")
+                        Picker(NSLocalizedString("选择分类方式", comment: "分类方式选择器"), selection: $selectedCategory) {
+                            Text(NSLocalizedString("日期", comment: "按日期分类")).tag("日期")
+                            Text(NSLocalizedString("文件格式", comment: "按文件格式分类")).tag("文件格式")
                         }
                         .pickerStyle(SegmentedPickerStyle())
                         .padding([.leading, .trailing], 20)
@@ -189,7 +194,7 @@ struct ContentView: View {
                                     .frame(width: 128, height: 128)
                                     .padding(.trailing, 10)
                                 VStack(alignment: .leading) {
-                                    Text("Photo Organizer V1.7.0 Build 1")
+                                    Text("Photo Organizer V1.8.0 Build 1")
                                     Text("作者: DannyFeng")
                                     Text("开源项目: https://github.com/FengzihangCode/Photo-Organizer")
                                     Button(action: checkForUpdates) {
@@ -249,11 +254,19 @@ struct ContentView: View {
                             
                             // Add any personalization settings here
                             
-                            Spacer()
-                        }
-                        .padding()
-                    }
-                }
+                            Section(header: Text("语言")) {
+                                            Picker("Language", selection: $selectedLanguage) {
+                                                Text("English").tag("en")
+                                                Text("简体中文").tag("zh-Hans")
+                                                }
+                                            }
+                            .pickerStyle(SegmentedPickerStyle())
+                                        }
+                                    }
+                                    .onChange(of: selectedLanguage) { newLanguage in
+                                        changeLanguage(to: newLanguage)
+                                    }
+                                }
                 else if currentPage == "帮助" {
                     VStack(alignment: .leading, spacing: 20) {
                         Text("感谢您使用Photo Organizer！")
@@ -520,9 +533,6 @@ struct ContentView: View {
                 }
                 
                 HStack {
-                    Button("同步到iCloud") {
-                        // uploadFileToiCloud(fileURL: URL)
-                    }
                     Button("推送到其他设备") {
                         // 推送到其他设备的逻辑
                     }
@@ -535,25 +545,6 @@ struct ContentView: View {
 
 
     // 具体的同步和推送功能在这里实现
-    func uploadFileToiCloud(fileURL: URL) {
-        let container = CKContainer.default()
-        let privateDatabase = container.privateCloudDatabase
-        
-        let record = CKRecord(recordType: "PhotoOrganizer")
-        record["fileName"] = fileURL.lastPathComponent as CKRecordValue
-        
-        let fileAsset = CKAsset(fileURL: fileURL)
-        record["file"] = fileAsset
-        
-        privateDatabase.save(record) { record, error in
-            if let error = error {
-                print("Error uploading file: \(error.localizedDescription)")
-            } else {
-                print("File uploaded successfully!")
-            }
-        }
-    }
-
 
     func pushToOtherDevices(folders: [String]) {
         // 推送到其他设备的代码
@@ -568,6 +559,16 @@ struct ContentView: View {
                 .onTapGesture {
                     isChecked.toggle()
                 }
+        }
+    }
+    
+    private func changeLanguage(to language: String) {
+        UserDefaults.standard.set([language], forKey: "AppleLanguages")
+        UserDefaults.standard.synchronize()
+
+        // Reload the current window's content view
+        if let window = NSApplication.shared.windows.first {
+            window.contentView = NSHostingView(rootView: ContentView())
         }
     }
 

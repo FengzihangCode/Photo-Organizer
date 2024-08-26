@@ -7,7 +7,8 @@ Photo Organizer包含适用于Windows/macOS/Linux的脚本与针对macOS的桌�
 根据文件格式（JPG、ARW 等）将照片移动到不同的文件夹中。
 ## 选择哪一个版本
 如果使用的是Windows操作系统，请使用PO Powershell，反之，则使用PO Bash
-## 如何使用（针对PO Bash）
+## 如何使用
+### PO Bash
 1. 将 `photo_organizer.sh` 文件复制到包含您照片的文件夹中。
 2. 在终端中导航到该文件夹。
 ```
@@ -18,7 +19,7 @@ cd 路径
 ./photo_organizer.sh
 ```
 4. 根据提示选择整理方式（输入1或2），并按照指示操作即可。
-## 如何使用（针对PO PowerShell）
+### PO PowerShell
 1. 将 `photo_organizer.sh` 文件复制到包含您照片的文件夹中。
 2. 运行PowerShell脚本
 3. 根据提示选择整理方式（输入1或2），并按照指示操作即可。

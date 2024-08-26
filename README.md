@@ -51,16 +51,15 @@ chmod +x photo_organizer.sh
 作者使用了PowerShell脚本（*.ps1）来实现Windows的功能，已经在1.1.0中发布
 ## 已知问题
 我们发现撤回操作可能无法完全执行
-## 正在开发的内容
-我们正在开发适用于macOS的Photo Organizer桌面应用程序，以支持在macOS中以图形化的方式高效整理照片
-<img width="1012" alt="Photo Organizer V1 7 0" src="https://github.com/user-attachments/assets/26bdc106-35dd-4b85-af6e-bb662a29b37f">
-
 ## 以后的开发计划
 ### PO PowerShell与PO Bash
 #### 代码优化
 优化“撤销上一次操作”
+
 ### PO Desktop
-我们会在接下来的版本中逐渐完成以下内容：
+## 正在开发的内容
+我们正在开发适用于macOS的Photo Organizer桌面应用程序，以支持在macOS中以图形化的方式高效整理照片
+<img width="1012" alt="Photo Organizer V1 7 0" src="https://github.com/user-attachments/assets/26bdc106-35dd-4b85-af6e-bb662a29b37f">
 ### 按拍摄日期整理
 根据拍摄日期创建文件夹，并将照片移动到相应的日期文件夹中。
 ### 按文件格式整理

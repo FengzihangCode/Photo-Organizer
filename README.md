@@ -1,14 +1,15 @@
 # Photo Organizer
 Photo Organizer包含适用于Windows/macOS/Linux的脚本与针对macOS的桌面端程序，旨在帮助分类照片文件夹中的照片。
 ## Photo Organizer Bash与Photo Organizer PowerShell
-### 按拍摄日期整理
+### 功能
+#### 按拍摄日期整理
 根据拍摄日期创建文件夹，并将照片移动到相应的日期文件夹中。
-### 按文件格式整理
+#### 按文件格式整理
 根据文件格式（JPG、ARW 等）将照片移动到不同的文件夹中。
-## 选择哪一个版本
+### 选择哪一个版本
 如果使用的是Windows操作系统，请使用PO Powershell，反之，则使用PO Bash
-## 如何使用
-### PO Bash
+### 如何使用
+#### PO Bash
 1. 将 `photo_organizer.sh` 文件复制到包含您照片的文件夹中。
 2. 在终端中导航到该文件夹。
 ```
@@ -19,11 +20,11 @@ cd 路径
 ./photo_organizer.sh
 ```
 4. 根据提示选择整理方式（输入1或2），并按照指示操作即可。
-### PO PowerShell
+#### PO PowerShell
 1. 将 `photo_organizer.sh` 文件复制到包含您照片的文件夹中。
 2. 运行PowerShell脚本
 3. 根据提示选择整理方式（输入1或2），并按照指示操作即可。
-## 注意事项
+### 注意事项
 - 确保放置该脚本的文件夹中包含要整理的照片。
 - 脚本仅支持处理以下常见的照片格式：JPG、ARW、NEF、ORF、RW2、RAF 和 DNG，如果需要处理其他格式的文件或指定不同的目录，请参考脚本中的参数化部分，并相应修改。
 - 请注意，针对PO Bash的用户，您可能需要给予执行权限
@@ -31,12 +32,12 @@ cd 路径
 cd 路径
 chmod +x photo_organizer.sh
 ```
-## 系统要求
+### 系统要求
 - Windows Server 2008、Windows 7及更高的操作系统
 - Mac OS X Tiger 10.4及更高的操作系统
 - Linux
 - 其他任何支持Bash的操作系统
-## 故障排除
+### 故障排除
 1.	找不到照片文件/No photo files found：
 确保您运行脚本的文件夹中包含您要整理的照片文件。如果文件夹中确实有照片文件，但脚本仍然无法找到，请检查文件名是否正确或文件权限是否设置正确。
 2.	创建目录失败/Error: Failed to create directory：
@@ -47,17 +48,13 @@ chmod +x photo_organizer.sh
 这是因为用户输入了无效的选项。请按照脚本提供的选项进行选择，并确保输入的选项是 1、2 或 3。检查输入是否有误并重新输入正确的选项。
 5.	未安装必要的工具/command not found：
 这可能是由于您的系统缺少所需的工具或环境变量配置不正确所致。请确保您的系统上安装了 Bash 或其他所需的 Unix 工具，或者尝试在另一台系统上运行脚本。
-## 关于Windows版本的说明
-作者使用了PowerShell脚本（*.ps1）来实现Windows的功能，已经在1.1.0中发布
-## 已知问题
+### 已知问题
 我们发现撤回操作可能无法完全执行
-## 以后的开发计划
-### PO PowerShell与PO Bash
+### 以后的开发计划
 #### 代码优化
 优化“撤销上一次操作”
 
-### PO Desktop
-## 正在开发的内容
+## Photo Organizer Desktop
 我们正在开发适用于macOS的Photo Organizer桌面应用程序，以支持在macOS中以图形化的方式高效整理照片
 <img width="1012" alt="Photo Organizer V1 7 0" src="https://github.com/user-attachments/assets/26bdc106-35dd-4b85-af6e-bb662a29b37f">
 ### 按拍摄日期整理

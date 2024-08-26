@@ -58,6 +58,8 @@ chmod +x photo_organizer.sh
 ## Photo Organizer Desktop
 我们正在开发适用于macOS的Photo Organizer桌面应用程序，以支持在macOS中以图形化的方式高效整理照片
 <img width="1012" alt="Photo Organizer V1 7 0" src="https://github.com/user-attachments/assets/26bdc106-35dd-4b85-af6e-bb662a29b37f">
+> [!IMPORTANT]
+> 该App目前正处于开发阶段，因此**部分功能尚未实现**，应用程序也**不一定能完全按预期运行**，作者对应用程序出现问题导致的意外不承担任何责任
 ### 功能
 #### 按拍摄日期整理
 根据拍摄日期创建文件夹，并将照片移动到相应的日期文件夹中。
